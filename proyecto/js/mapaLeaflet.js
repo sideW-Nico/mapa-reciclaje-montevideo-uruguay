@@ -44,11 +44,6 @@ async function recuperarUbicaciones() {
     const registros = json.result.records;
     console.log(registros);
 
-    /*for (const id of registros) {
-        var marcador = L.marker([id.Latitude, id.Longitude]).addTo(mapa);
-        console.log(id.Latitude);
-    }*/
-
     cargarMarcadores(registros);
 }
 

@@ -1,44 +1,47 @@
-# Mapa de archivos del proyecto
+# Mapa de archivos
 
-**Fecha de generación:** 2026-10-28  
-**Proyecto:** Proyecto - Residuos Montevideo DATA URUGUAY
+Generado: 2026-10-29 02:13
 
-## Árbol completo
+## Árbol
 
 ```
-C:\Users\Usuario\Documents\Proyecto de Datos\Proyecto - Residuos Montevideo DATA URUGUAY
-├── .gitignore
+Proyecto - Residuos Montevideo DATA URUGUAY/
+├── docs/
+│   └── Datos/
+│       ├── Análisis de datos/
+│       │   ├── Etapa I - Importación de datos/
+│       │   │   └── EDA.ipynb
+│       │   └── Etapa II - EDA y verificación/
+│       │       └── Importacion de datos.ipynb
+│       ├── Datasets - limpios/
+│       └── readme.md
+├── proyecto/
+│   ├── css/
+│   │   └── global.css
+│   ├── js/
+│   │   └── mapaLeaflet.js
+│   ├── index.html
+│   ├── package.json
+│   └── package-lock.json
 ├── LICENSE
-├── README.md
-└── proyecto
-    ├── index.html
-    ├── package-lock.json
-    ├── package.json
-    ├── css
-    │   └── global.css
-    └── js
-        └── mapaLeaflet.js
+└── README.md
 ```
 
 ## Resumen
 
-### Archivos por tipo/extensión
-- **HTML:** 1 (index.html)
-- **JavaScript:** 1 (mapaLeaflet.js)
-- **CSS:** 1 (global.css)
-- **JSON:** 2 (package.json, package-lock.json)
-- **Markdown:** 1 (README.md)
-- **Licencia:** 1 (LICENSE)
-- **Git ignore:** 1 (.gitignore)
-- **Total:** 8 archivos
+- Carpetas: 9
+- Archivos: 10
 
-### Carpetas principales
-- `proyecto/` - Carpeta raíz de la aplicación
-  - `css/` - Estilos (1 archivo)
-  - `js/` - Scripts (1 archivo)
+| Extensión | Archivos |
+|---|---|
+| .json | 2 |
+| .md | 2 |
+| .ipynb | 2 |
+| .js | 1 |
+| .css | 1 |
+| (sin extensión) | 1 |
+| .html | 1 |
 
-### Archivos relevantes
-- `proyecto/index.html` - Punto de entrada principal
-- `proyecto/package.json` - Configuración del proyecto Node.js
-- `proyecto/js/mapaLeaflet.js` - Lógica del mapa con Leaflet
-- `proyecto/css/global.css` - Estilos globales
+## Notas
+
+- Excluidos: carpetas y archivos ocultos (`.git/`, `.claude/`).

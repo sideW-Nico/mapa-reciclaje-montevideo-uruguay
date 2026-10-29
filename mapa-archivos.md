@@ -1,6 +1,6 @@
 # Mapa de archivos
 
-Generado: 2026-10-29 02:13
+Generado: 2026-10-29 17:02
 
 ## Árbol
 
@@ -12,8 +12,12 @@ Proyecto - Residuos Montevideo DATA URUGUAY/
 │       │   ├── Etapa I - Importación de datos/
 │       │   │   └── EDA.ipynb
 │       │   └── Etapa II - EDA y verificación/
-│       │       └── Importacion de datos.ipynb
-│       ├── Datasets - limpios/
+│       │       ├── Importacion de datos.ipynb
+│       │       └── mapa-contenedores.html
+│       ├── Dataset - limpio/
+│       │   └── containers-limpio.parquet
+│       ├── Dataset - original/
+│       │   └── containers-2022-07-27.csv
 │       └── readme.md
 ├── proyecto/
 │   ├── css/
@@ -29,18 +33,20 @@ Proyecto - Residuos Montevideo DATA URUGUAY/
 
 ## Resumen
 
-- Carpetas: 9
-- Archivos: 10
+- Carpetas: 10
+- Archivos: 13
 
 | Extensión | Archivos |
 |---|---|
 | .json | 2 |
-| .md | 2 |
+| .html | 2 |
 | .ipynb | 2 |
+| .md | 2 |
 | .js | 1 |
 | .css | 1 |
 | (sin extensión) | 1 |
-| .html | 1 |
+| .parquet | 1 |
+| .csv | 1 |
 
 ## Notas
 

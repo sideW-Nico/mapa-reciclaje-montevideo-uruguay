@@ -1,0 +1,4 @@
+# Archivos de datos: Git no debe tocarles los saltos de línea.
+# Sus huellas SHA-256 están registradas en el manifiesto y en el archivo de procedencia.
+*.csv -text
+*.parquet binary

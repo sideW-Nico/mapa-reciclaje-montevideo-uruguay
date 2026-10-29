@@ -1,0 +1,14 @@
+# Dependencias, también en subcarpetas
+node_modules/
+
+# Archivos de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

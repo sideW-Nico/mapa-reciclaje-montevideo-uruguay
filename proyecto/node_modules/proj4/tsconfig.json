@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": [
+      "es2020", "dom"
+    ]
+  },
+  "include": [
+    "lib/**/*.js",
+  ]
+}

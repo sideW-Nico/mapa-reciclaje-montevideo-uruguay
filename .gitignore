@@ -15,3 +15,7 @@ Thumbs.db
 
 # Claude Code (worktrees y configuración local)
 .claude/
+
+
+# Checkpoints de Jupyter
+.ipynb_checkpoints/

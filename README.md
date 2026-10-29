@@ -7,10 +7,15 @@ Utiliza datos publicados por DATA Uruguay en el Catálogo Nacional de Datos Abie
 ### Instalación
 
 1. Cloná el repositorio y abrilo en VS Code.
-2. Ejecutá `npm install` en la carpeta que contiene el archivo `package.json`.
-3. Abrí `proyecto/index.html` con Live Server en VS Code.
+2. Desde la raíz del proyecto, ejecutá:
 
-**Nota:** las rutas del HTML deben apuntar a la carpeta `node_modules` generada durante la instalación.
+   ```bash
+   cd proyecto
+   npm install
+   ```
+
+3. Instalá la extensión **Live Server** de VS Code si todavía no la tenés.
+4. Hacé clic derecho sobre `proyecto/index.html` y seleccioná **Open with Live Server**.
 
 ## Tecnologías
 

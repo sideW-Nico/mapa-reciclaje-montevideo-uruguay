@@ -12,3 +12,6 @@ node_modules/
 # Archivos del sistema
 .DS_Store
 Thumbs.db
+
+# Claude Code (worktrees y configuración local)
+.claude/

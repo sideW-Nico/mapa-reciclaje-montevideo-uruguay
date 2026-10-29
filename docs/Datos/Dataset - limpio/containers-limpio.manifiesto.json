@@ -1,0 +1,72 @@
+{
+  "generado": "2026-10-29T17:31:33-03:00",
+  "origen": {
+    "archivo": "containers-2022-07-27.csv",
+    "sha256": "01ffdfe84b61c6f5a7d579586d1bbac7283e0fafbf8ab5dca30a1f988a9e8dbf",
+    "bytes": 403960
+  },
+  "salida": {
+    "archivo": "containers-limpio.parquet",
+    "sha256": "89f5eff6ca0c36db269ee4f10c1c8eefeb224b804cc6ab45032bc128e9ee9b0e",
+    "bytes": 200178,
+    "filas": 2423,
+    "columnas": 23,
+    "nombres_de_columnas": [
+      "id",
+      "id_externo",
+      "latitud",
+      "longitud",
+      "latitud_original",
+      "longitud_original",
+      "km_al_centro_depto",
+      "coordenada_valida",
+      "coordenada_corregida",
+      "coordenada_sospechosa",
+      "sitio",
+      "direccion",
+      "localidad",
+      "departamento",
+      "tipo_sitio",
+      "sitio_publico",
+      "oculto",
+      "visible",
+      "posible_duplicado",
+      "informacion",
+      "icono_propio",
+      "creado_en",
+      "actualizado_en"
+    ]
+  },
+  "relectura_identica": true,
+  "reglas_aplicadas": [
+    "R1: strip, espacios dobles y textos vacíos a faltante en las columnas de texto",
+    "R2: departamento unificado contra los 19 departamentos (tildes, mayúsculas y 3 errores de escritura)",
+    "R3: departamento faltante completado cuando su localidad pertenece a un único departamento",
+    "R4: localidad unificada por mayúsculas y tildes, con la forma más frecuente",
+    "R5: latitud y longitud intercambiadas, corregidas",
+    "R6: signo positivo de la longitud, corregido",
+    "R7: coordenadas fuera de Uruguay, quitadas (el valor original se conserva en latitud_original y longitud_original)",
+    "Marcas sin modificar datos: visible, posible_duplicado, coordenada_sospechosa",
+    "Sin eliminación de filas, imputación de valores ni recorte de extremos"
+  ],
+  "entorno": {
+    "python": "3.13.5",
+    "pandas": "2.3.1",
+    "pyarrow": "26.0.0",
+    "folium": "0.20.0"
+  },
+  "registro_de_cambios": {
+    "archivo": "containers-cambios.csv",
+    "sha256": "86a0a3fdd7463e3d86f49880e63b56c1a72b2947447e60379fd488e3a6a52181",
+    "celdas_modificadas": 795,
+    "celdas_por_regla": {
+      "R1 espacios y vacíos": 618,
+      "R2 departamento: escritura": 6,
+      "R3 departamento: completado por localidad": 1,
+      "R4 localidad: mayúsculas y tildes": 70,
+      "R5 coordenadas intercambiadas": 88,
+      "R6 signo de la longitud": 1,
+      "R7 coordenada fuera de Uruguay": 11
+    }
+  }
+}
